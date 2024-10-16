@@ -1,0 +1,1 @@
+function $text(selector) { document.querySelector(selector)}
