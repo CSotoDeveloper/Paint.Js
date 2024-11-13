@@ -1,2 +1,1 @@
 # paint
-# Paint.Js
