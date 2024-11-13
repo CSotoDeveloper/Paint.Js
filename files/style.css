@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #222;
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+h1 {
+    color: #fce300;
+    font-size: 12px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+  }
+
+  img {
+    width: 16px;
+    height: auto;
+  }
+
+  button{
+    background-color: silver;
+    border: 1.5px solid #eee;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    image-rendering: pixelated;
+  }
+  button:hover {
+    cursor: pointer;
+}
+
+
+  /* all */
+#container{
+    border: 1px silver solid;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer"
+    ;
+
+    
+}
+
+/* header */
+
+header{
+    background-color: silver;
+    grid-area: header;
+    padding: 2px;
+}
+
+/* aside */
+
+aside{
+    background-color: silver;
+    grid-area: aside;
+    width: 60px;
+    padding-top: 2px;
+}
+
+aside button {
+    width: 25px;
+    height: 25px;
+    border: 1.5px solid #eee;
+    border-right-color: #000;
+    border-bottom-color: #000;
+}
+
+.active {
+    border: 1.5px solid black;
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+}
+
+#draw-btn{
+    background: silver url(../public/icons/draw.png) no-repeat center;
+}
+
+#erase-btn {
+    background: silver url(../public/icons/erase.png) no-repeat center;
+}
+
+#rectangle-btn{
+    background: silver url(../public/icons/rectangle.png) no-repeat center;
+}
+
+#elipse-btn{
+    background: silver url(../public/icons/ellipse.png) no-repeat center;
+}
+
+#picker-btn{
+    background: silver url(../public/icons/picker.png) no-repeat center;
+}
+
+#clear-btn{
+    background: silver url(../public/icons/clear.png) no-repeat center;
+
+}
+
+
+/* canva */
+main{
+    grid-area: main;
+    padding: 3px;
+    padding-bottom: 0px;
+}
+#canvas {
+    background-color: white;
+    width: 400px;
+
+}
+
+
+/* Footer */
+
+footer{
+    padding: 2px;
+    grid-area: footer;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    background-color: silver;
+}
+
+.btnColor {
+    cursor: pointer;
+    height: 25px;
+}
